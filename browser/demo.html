@@ -1,0 +1,19 @@
+<html ng-app="demoApp">
+<div ng-controller="DemoCtrl">
+  <input style="width: 100%; font-size: 18px; padding: 10px;" type="text" ng-model="queryText"
+  <br><br>
+  <pre>{{queryObj | json}}</pre>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.js"></script>
+<script src="search-query-parser.js"></script>
+<script>
+angular.module('demoApp', []).controller('DemoCtrl', function($scope) {
+  var searchQueryOptions = {keywords: ['type', 'squad', 'agency', 'officer', 'tag']}
+
+  var parseQueryText = function() {
+    $scope.queryObj = SearchQuery.parse($scope.queryText, searchQueryOptions);
+  }
+  $scope.$watch('queryText', parseQueryText);
+});
+</script>
+</html>

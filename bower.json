@@ -1,0 +1,37 @@
+{
+  "name": "search-query-parser",
+  "description": "Parser for advanced search query syntax",
+  "main": "browser/search-query-parser.js",
+  "authors": [
+    {
+      "name": "Julien Buty",
+      "email": "julien@nepsilon.net"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "search",
+    "syntax",
+    "parser",
+    "query",
+    "syntax",
+    "parser",
+    "query",
+    "parser",
+    "search",
+    "query",
+    "search"
+  ],
+  "homepage": "https://github.com/Boltmade/search-query-parser",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
